@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    border: none;
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* colors */
+
+:root {
+    --white: #ffffff;
+    --color-primary: #ffb20d;
+}
+
+/* text styles */
+
+.text-button-bold {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.text-subtitle-1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.text-body-bold {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* header */
+
+.header {
+    height: 78px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    height: 100%;
+}
+
+.delivery {
+    display: flex;
+}
+
+.delivery__content {
+    display: flex;
+}
+
+.delivery__info {
+    display: flex;
+}
+
+.header i {
+    color: var(--color-primary);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.button--login,
+.button--login i {
+    transition: all 0.3s ease;
+}
+
+.button--login {
+    width: 118px;
+    height: 46px;
+    background: var(--white);
+    color: var(--color-primary);
+    padding: 14px 24px;
+    box-shadow: 0px 4px 12px rgba(255, 178, 13, 0.25);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.button--login:hover {
+    background: var(--color-primary);
+    color: var(--white);
+    box-shadow: 0px 6px 16px rgba(255, 178, 13, 0.35);
+}
+
+.button--login:hover i {
+    color: var(--white);
+}

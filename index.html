@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="delivery">
+                <span class="delivery__label text-button-bold">Deliver to:</span>
+                <div class="delivery__content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="delivery__info">
+                        <span class="delivery__status text-subtitle-1">Current Location</span>
+                        <address class="delivery__address text-body-bold">
+                            Mohammadpur Bus Stand, Dhaka
+                        </address>
+                    </div> 
+                </div>
+            </div>
+            <div class="header__actions">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <span class="text-button-bold">Search food</span>
+                </div>
+                <button class="button button--login" type="button">
+                    <i class="fas fa-user"></i>
+                    <span class="text-button-bold">Login</span>
+                </button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
